@@ -19,14 +19,14 @@ client.on("guildMemberAdd", member =>{
     client.guilds.get("280285147805384704").channels.get("280285147805384704").sendEmbed(
         embed, {
                 disableEveryone: true
-            } 
-    ); 
-});  
+            }
+    );
+});
     //Bots prefix
 	const prefix = "p!"
 
 client.on('message', message => {
-	
+
     //Evaluate JavaScript
 	if(message.content.startsWith(prefix + "eval")) {
   if (message.author.id !== "241216483592634368")
@@ -207,7 +207,7 @@ if (!message.guild || !message.member) return;
           message.channel.send('I can\'t find the Green role.')
       }
   }
-  } 
+  }
 
 if (message.content.startsWith(prefix + "yellow")) {
 if (!message.guild || !message.member) return;
@@ -234,8 +234,183 @@ if (!message.guild || !message.member) return;
       } catch (err) {
           message.channel.send('I can\'t find the Yellow role.')
       }
-  } 
   }
+  }
+
+  if (message.content.startsWith(prefix + "blue")) {
+  if (!message.guild || !message.member) return;
+    if (!message.guild || message.guild.id !== '280285147805384704') return; {
+        let member = message.guild.member
+        var role = message.guild.roles.find('name', "Blue");
+        try {
+            message.member.addRole(role)
+  		  message.reply("Done 👌")
+        } catch (err) {
+            message.channel.send('I can\'t find the Blue role.')
+        }
+    }
+  }
+
+  if (message.content.startsWith(prefix + "noblue")) {
+  const Discord = require("discord.js");
+  if (!message.guild || !message.member) return;
+    if (!message.guild || message.guild.id !== '280285147805384704') return; {
+        let member = message.guild.member
+        var role = message.guild.roles.find('name', "Yellow");
+        try {
+            message.member.removeRole(role)
+            message.reply("Done 👌")
+        } catch (err) {
+            message.channel.send('I can\'t find the Blue role.')
+        }
+    }
+    }
+
+    if (message.content.startsWith(prefix + "lime")) {
+    if (!message.guild || !message.member) return;
+      if (!message.guild || message.guild.id !== '280285147805384704') return; {
+          let member = message.guild.member
+          var role = message.guild.roles.find('name', "Lime");
+          try {
+              message.member.addRole(role)
+    		  message.reply("Done 👌")
+          } catch (err) {
+              message.channel.send('I can\'t find the Lime role.')
+          }
+      }
+    }
+
+    if (message.content.startsWith(prefix + "nolime")) {
+    const Discord = require("discord.js");
+    if (!message.guild || !message.member) return;
+      if (!message.guild || message.guild.id !== '280285147805384704') return; {
+          let member = message.guild.member
+          var role = message.guild.roles.find('name', "Lime");
+          try {
+              message.member.removeRole(role)
+              message.reply("Done 👌")
+          } catch (err) {
+              message.channel.send('I can\'t find the Lime role.')
+          }
+      }
+      }
+
+      if (message.content.startsWith(prefix + "orange")) {
+      if (!message.guild || !message.member) return;
+        if (!message.guild || message.guild.id !== '280285147805384704') return; {
+            let member = message.guild.member
+            var role = message.guild.roles.find('name', "Orange");
+            try {
+                message.member.addRole(role)
+      		  message.reply("Done 👌")
+            } catch (err) {
+                message.channel.send('I can\'t find the Orange role.')
+            }
+        }
+      }
+
+      if (message.content.startsWith(prefix + "noorange")) {
+      const Discord = require("discord.js");
+      if (!message.guild || !message.member) return;
+        if (!message.guild || message.guild.id !== '280285147805384704') return; {
+            let member = message.guild.member
+            var role = message.guild.roles.find('name', "Orange");
+            try {
+                message.member.removeRole(role)
+                message.reply("Done 👌")
+            } catch (err) {
+                message.channel.send('I can\'t find the Orange role.')
+            }
+        }
+        }
+
+        if (message.content.startsWith(prefix + "purple")) {
+        if (!message.guild || !message.member) return;
+          if (!message.guild || message.guild.id !== '280285147805384704') return; {
+              let member = message.guild.member
+              var role = message.guild.roles.find('name', "Purple");
+              try {
+                  message.member.addRole(role)
+        		  message.reply("Done 👌")
+              } catch (err) {
+                  message.channel.send('I can\'t find the Purple role.')
+              }
+          }
+        }
+
+        if (message.content.startsWith(prefix + "nopurple")) {
+        const Discord = require("discord.js");
+        if (!message.guild || !message.member) return;
+          if (!message.guild || message.guild.id !== '280285147805384704') return; {
+              let member = message.guild.member
+              var role = message.guild.roles.find('name', "Purple");
+              try {
+                  message.member.removeRole(role)
+                  message.reply("Done 👌")
+              } catch (err) {
+                  message.channel.send('I can\'t find the Purple role.')
+              }
+          }
+          }
+
+          if (message.content.startsWith(prefix + "plum")) {
+          if (!message.guild || !message.member) return;
+            if (!message.guild || message.guild.id !== '280285147805384704') return; {
+                let member = message.guild.member
+                var role = message.guild.roles.find('name', "Plum");
+                try {
+                    message.member.addRole(role)
+          		  message.reply("Done 👌")
+                } catch (err) {
+                    message.channel.send('I can\'t find the Plum role.')
+                }
+            }
+          }
+
+          if (message.content.startsWith(prefix + "noplum")) {
+          const Discord = require("discord.js");
+          if (!message.guild || !message.member) return;
+            if (!message.guild || message.guild.id !== '280285147805384704') return; {
+                let member = message.guild.member
+                var role = message.guild.roles.find('name', "Plum");
+                try {
+                    message.member.removeRole(role)
+                    message.reply("Done 👌")
+                } catch (err) {
+                    message.channel.send('I can\'t find the Plum role.')
+                }
+            }
+            }
+
+            if (message.content.startsWith(prefix + "ob")) {
+            if (!message.guild || !message.member) return;
+              if (!message.guild || message.guild.id !== '280285147805384704') return; {
+                  let member = message.guild.member
+                  var role = message.guild.roles.find('name', "Ocean Blue");
+                  try {
+                      message.member.addRole(role)
+            		  message.reply("Done 👌")
+                  } catch (err) {
+                      message.channel.send('I can\'t find the Ocean Blue role.')
+                  }
+              }
+            }
+
+            if (message.content.startsWith(prefix + "noob")) {
+            const Discord = require("discord.js");
+            if (!message.guild || !message.member) return;
+              if (!message.guild || message.guild.id !== '280285147805384704') return; {
+                  let member = message.guild.member
+                  var role = message.guild.roles.find('name', "Ocean Blue");
+                  try {
+                      message.member.removeRole(role)
+                      message.reply("Done 👌")
+                  } catch (err) {
+                      message.channel.send('I can\'t find the Ocean Blue role.')
+                  }
+              }
+              }
+
 //owo
 
 if (message.content.startsWith("<@325311955885883392>" + " " + "ping")) {
