@@ -78,7 +78,7 @@
   <li><code class="highlighter-rouge">io.enable    :: Show all the roles on the server.</code></li>
 </ul>
 
-<p><strong>Example</strong></p>
+<h1 id="examples">Examples</h1>
 
 <p><strong>Note:</strong> Example on io.conf command:</p>
 <ul>
