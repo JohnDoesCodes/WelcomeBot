@@ -78,6 +78,8 @@
   <li><code class="highlighter-rouge">io.enable    :: Show all the roles on the server.</code></li>
 </ul>
 
+<p><strong>Example</strong></p>
+
 <p><strong>Note:</strong> Example on io.conf command:</p>
 <ul>
   <li><code class="highlighter-rouge">io.conf set prefix !!!</code></li>
