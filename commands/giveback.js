@@ -72,42 +72,43 @@ exports.run = (client, message) => {
     }
   }
   if (args === "lime") {
-    message.member.removeRole(lime)
-    message.reply("Done 👌")
-  } catch (err) {
-    message.channel.send('I can\'t find the Lime role.')
+    try {
+      message.member.removeRole(lime)
+      message.reply("Done 👌")
+    } catch (err) {
+      message.channel.send('I can\'t find the Lime role.')
+    }
   }
-}
-if (args === "orange") {
-  try {
-    message.member.removeRole(orange)
-    message.reply("Done 👌")
-  } catch (err) {
-    message.channel.send('I can\'t find the Orange role.')
+  if (args === "orange") {
+    try {
+      message.member.removeRole(orange)
+      message.reply("Done 👌")
+    } catch (err) {
+      message.channel.send('I can\'t find the Orange role.')
+    }
   }
-}
-if (args === "purple") {
-  try {
-    message.member.removeRole(purple)
-    message.reply("Done 👌")
-  } catch (err) {
-    message.channel.send('I can\'t find the Purple role.')
+  if (args === "purple") {
+    try {
+      message.member.removeRole(purple)
+      message.reply("Done 👌")
+    } catch (err) {
+      message.channel.send('I can\'t find the Purple role.')
+    }
   }
-}
-if (args === "plum") {
-  try {
-    message.member.removeRole(plum)
-    message.reply("Done 👌")
-  } catch (err) {
-    message.channel.send('I can\'t find the Plum role.')
+  if (args === "plum") {
+    try {
+      message.member.removeRole(plum)
+      message.reply("Done 👌")
+    } catch (err) {
+      message.channel.send('I can\'t find the Plum role.')
+    }
   }
-}
-if (args === "ob") {
-  try {
-    message.member.removeRole(ob)
-    message.reply("Done 👌")
-  } catch (err) {
-    message.channel.send('I can\'t find the Ocean Blue role.')
+  if (args === "ob") {
+    try {
+      message.member.removeRole(ob)
+      message.reply("Done 👌")
+    } catch (err) {
+      message.channel.send('I can\'t find the Ocean Blue role.')
+    }
   }
-}
 }
