@@ -11,22 +11,13 @@ exports.run = (client, message) => {
   var lime = message.guild.roles.find('name', "Lime");
   var orange = message.guild.roles.find('name', "Orange");
   var purple = message.guild.roles.find('name', "Purple");
-var plum = message.guild.roles.find('name', "Plum");
-var ob = message.guild.roles.find('name', "Ocean Blue");
-  var members = message.guild.roles.find('name', "Members");
+  var plum = message.guild.roles.find('name', "Plum");
+  var ob = message.guild.roles.find('name', "Ocean Blue");
   let args = message.content.split(' ').slice(1).join(' ');
   if (!args) return message.channel.send("Please specify an argument.")
-  if (args === "agree") {
-    try {
-      message.member.addRole(members)
-      message.reply("Done 👌")
-    } catch (err) {
-      message.channel.send('I can\'t find the Members role.')
-    }
-  }
   if (args === "red") {
     try {
-      message.member.addRole(red)
+      message.member.removeRole(red)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Red role.')
@@ -34,7 +25,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "cyan") {
     try {
-      message.member.addRole(cyan)
+      message.member.removeRole(cyan)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Cyan role.')
@@ -42,7 +33,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "black") {
     try {
-      message.member.addRole(black)
+      message.member.removeRole(black)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Black role.')
@@ -50,7 +41,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "pink") {
     try {
-      message.member.addRole(pink)
+      message.member.removeRole(pink)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Pink role.')
@@ -58,7 +49,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "green") {
     try {
-      message.member.addRole(green)
+      message.member.removeRole(green)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Green role.')
@@ -66,7 +57,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "yellow") {
     try {
-      message.member.addRole(yellow)
+      message.member.removeRole(yellow)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Yellow role.')
@@ -74,50 +65,49 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   }
   if (args === "blue") {
     try {
-      message.member.addRole(blue)
+      message.member.removeRole(blue)
       message.reply("Done 👌")
     } catch (err) {
       message.channel.send('I can\'t find the Blue role.')
     }
   }
   if (args === "lime") {
-    try {
-      message.member.addRole(role)
-      message.reply("Done 👌")
-    } catch (err) {
-      message.channel.send('I can\'t find the Lime role.')
-    }
-  }
-  if (args === "orange") {
-    try {
-        message.member.addRole(orange)
+    message.member.removeRole(lime)
     message.reply("Done 👌")
-    } catch (err) {
-        message.channel.send('I can\'t find the Orange role.')
-    }
+  } catch (err) {
+    message.channel.send('I can\'t find the Lime role.')
   }
-  if (args === "purple") {
-    try {
-        message.member.addRole(purple)
+}
+if (args === "orange") {
+  try {
+    message.member.removeRole(orange)
     message.reply("Done 👌")
-    } catch (err) {
-        message.channel.send('I can\'t find the Purple role.')
-    }
+  } catch (err) {
+    message.channel.send('I can\'t find the Orange role.')
   }
-  if (args === "plum") {
-    try {
-        message.member.addRole(plum)
+}
+if (args === "purple") {
+  try {
+    message.member.removeRole(purple)
     message.reply("Done 👌")
-    } catch (err) {
-        message.channel.send('I can\'t find the Plum role.')
-    }
+  } catch (err) {
+    message.channel.send('I can\'t find the Purple role.')
   }
-  if (args === "ob") {
-    try {
-        message.member.addRole(ob)
+}
+if (args === "plum") {
+  try {
+    message.member.removeRole(plum)
     message.reply("Done 👌")
-    } catch (err) {
-        message.channel.send('I can\'t find the Ocean Blue role.')
-    }
+  } catch (err) {
+    message.channel.send('I can\'t find the Plum role.')
   }
+}
+if (args === "ob") {
+  try {
+    message.member.removeRole(ob)
+    message.reply("Done 👌")
+  } catch (err) {
+    message.channel.send('I can\'t find the Ocean Blue role.')
+  }
+}
 }
