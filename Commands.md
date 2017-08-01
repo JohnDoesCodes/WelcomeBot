@@ -2,8 +2,8 @@
 
 <p><strong>General</strong></p>
 <ul>
-  <li><code class="highlighter-rouge">p!give :: <role>  :: Gives a role that is available on the server.</code></li>
-  <li><code class="highlighter-rouge">p!giveback :: <role>  :: Gives back a role that is available on the server.</code></li>
+  <li><code class="highlighter-rouge">p!give :: (role)  :: Gives a role that is available on the server.</code></li>
+  <li><code class="highlighter-rouge">p!giveback :: (role)  :: Gives back a role that is available on the server.</code></li>
   <li><code class="highlighter-rouge">p!ping :: Check the bot if alive.</code></li>
 </ul>
 
