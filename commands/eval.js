@@ -9,7 +9,7 @@ var evalcode = message.content.split(" ").splice(1).join(" ");
 			var evaled = eval(evalcode);
 			if (typeof evaled !== "string")
 				evaled = require("util").inspect(evaled);
-			message.channel.sendMessage("Output:\n```x1\n" + clean(evaled) + "```");
+			message.channel.sendMessage("Output:\n```js\n" + clean(evaled) + "```");
 		}
 		catch (err) {
 			message.channel.sendMessage("Error: " + clean(err));
