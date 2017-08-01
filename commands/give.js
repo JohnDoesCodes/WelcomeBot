@@ -16,7 +16,7 @@ var ob = message.guild.roles.find('name', "Ocean Blue");
   var members = message.guild.roles.find('name', "Members");
   let args = message.content.split(' ').slice(1).join(' ');
   if (!args) return message.channel.send("Please specify an argument.")
-  if (args === "agree") {
+  if (args === "members") {
     try {
       message.member.addRole(members)
       message.reply("Done 👌")
