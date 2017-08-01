@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-exports.run = (client, message, args){
+exports.run = (client, message, args) => {
 if (message.author.id !== "241216483592634368")
 return message.reply("This can only be used by the bot owner.")
 if (!message.guild || !message.member) return;
