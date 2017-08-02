@@ -4,7 +4,7 @@ exports.run = (client, message) => {
   if (!args) return message.channel.send("Please specify an argument.\n`say`.")
   if (args === "say") {
     let embed = new Discord.RichEmbed();
-    let suffix = message.content.split(' ').slice(2).join(' ');
+    let suffix = message.content.split(' ').slice(3).join(' ');
     embed.setDescription(`Requested by ${message.author.user}: ${suffix}`)
     message.channel.send({embed})
   }
