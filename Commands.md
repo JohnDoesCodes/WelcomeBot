@@ -5,6 +5,7 @@
   <li><code class="highlighter-rouge">p!give :: (role)  :: Gives a role that is available on the server.</code></li>
   <li><code class="highlighter-rouge">p!giveback :: (role)  :: Gives back a role that is available on the server.</code></li>
   <li><code class="highlighter-rouge">p!ping :: Check the bot if alive.</code></li>
+  <li><code class="highlighter-rouge">p!say :: Echo to the bot what you said.</code></li>
 </ul>
 
 <h1 id="developer commands">Developer Commands</h1>
@@ -23,4 +24,3 @@
   <li><code class="highlighter-rouge">p!give red</code></li>
   <li><code class="highlighter-rouge">p!giveback red</code></li>
 </ul>
- 
